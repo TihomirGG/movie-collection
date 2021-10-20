@@ -1,0 +1,10 @@
+.hero-section {
+    background-image: url('https://images.savoysystems.co.uk/ACA/13583.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    &__content {
+        max-width: 35%;
+        padding: 40px 20px;
+    }
+}

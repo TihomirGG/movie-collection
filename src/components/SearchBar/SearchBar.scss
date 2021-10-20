@@ -1,0 +1,22 @@
+.search-bar {
+    &__input {
+        border-radius: 10px;
+        border: none;
+        padding: 10px 10px;
+        margin-right: 10px;
+        border: 2px solid #ced4da;
+    }
+
+    &__button {
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #33A64C;
+        background-color: transparent;
+        color: #33A64C;
+    }
+
+    &__button:hover {
+        color: white;
+        background-color: #33A64C;
+    }
+}
