@@ -1,0 +1,12 @@
+.star-container {
+    &__label {
+        input {
+            display: none;
+        }
+
+        &__star {
+            cursor: pointer;
+            transition: color 250ms;
+        }
+    }
+}
