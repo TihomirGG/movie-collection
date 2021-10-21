@@ -1,0 +1,11 @@
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #F8F9FA;
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        align-self: center;
+    }
+}

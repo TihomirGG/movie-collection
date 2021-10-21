@@ -1,0 +1,54 @@
+.hero-section {
+    // background-image: url('../../static/4680598.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    min-height: 350px;
+    position: relative;
+    border-bottom: 2px solid #666666;
+    border-top: 2px solid #666666;
+   
+    &__background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        &__img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        background-color: rgba(248, 249, 250, 0.8);
+        border-radius: 10px;
+        max-width: 30%;
+        padding: 40px 20px;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+
+        &__title {
+            text-align: start;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        &__info {
+            text-align: start;
+        }
+
+        &__button {
+            text-align: start;
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: blue;
+            border: 2px solid blue;
+            color: white;
+            padding: 10px 10px;
+            display: block;
+        }
+    }
+}
