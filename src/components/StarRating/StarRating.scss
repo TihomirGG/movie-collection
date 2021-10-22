@@ -1,0 +1,15 @@
+.star-container {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+    &__label {
+        input {
+            display: none;
+        }
+
+        &__star {
+            cursor: pointer;
+            transition: color 250ms;
+        }
+    }
+}
