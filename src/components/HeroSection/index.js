@@ -4,7 +4,7 @@ function HeroSection(props) {
     return (
         <div className="hero-section">
             <div className="hero-section__background">
-            <img className="hero-section__background__img" src="https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg"/>
+            <img className="hero-section__background__img" alt="movie" src="https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg"/>
             </div>
             <div className="hero-section__content">
                 <h2 className="hero-section__content__title">Heading</h2>
