@@ -15,7 +15,7 @@ function MovieCard(props) {
                     vitae sunt tenetur error alias quidem officiis delectus. Culpa fugiat delectus soluta maxime at
                     blanditiis facilis odio impedit!
                 </p>
-                <Link className="movie-card__info__site" to={{ pathname: "https://www.imdb.com/" }} target="_blank">go there</Link>
+                <Link className="movie-card__info__site" to={{ pathname: "https://www.imdb.com/" }} target="_blank">Visit official website</Link>
                 <button className="movie-card__info__button">Add to favourite</button>
             </div>
         </div>
