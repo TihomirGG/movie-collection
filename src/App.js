@@ -4,7 +4,6 @@ import Home from './views/Home';
 import Search from './views/Search';
 import MovieDetail from './views/MovieDetail';
 import ROUTES from './constants/routes';
-import './App.scss';
 
 function App() {
     return (
