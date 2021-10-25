@@ -42,15 +42,38 @@
             margin: 10px 0px;
         }
 
-        &__button {
+        &__button--remove {
             position: absolute;
             bottom: 0;
-            left:30px;
+            left: 30px;
             padding: 10px 15px;
             background-color: transparent;
             border-radius: 8px;
-            border: 2px solid #B85450;
-            color: #CD063E;
+            border: 2px solid #b85450;
+            color: #cd063e;
+            transition: background-color 250ms;
+        }
+
+        &__button--add {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            padding: 10px 15px;
+            background-color: transparent;
+            border-radius: 8px;
+            border: 2px solid #3fab56;
+            color: #3fa64e;
+            transition: background-color 250ms;
+        }
+
+        &__button--remove:hover {
+            background-color: #cd063e;
+            color: #fff;
+        }
+
+        &__button--add:hover {
+            color: #fff;
+            background-color: #3fa64e;
         }
     }
 }

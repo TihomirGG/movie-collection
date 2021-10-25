@@ -1,10 +1,21 @@
 import './StarRating.scss';
 import { FaStar } from 'react-icons/fa';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { updateRating } from '../../app/slices/movieSlice';
 
 function StarRating(props) {
-    const [rating, setRating] = useState(null);
+    const ratingSelector = useSelector(state => state.movie.movie.rating);
+    const [rating, setRating] = useState();
     const [hover, setHover] = useState(null);
+    const { id } = useParams();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        setRating(ratingSelector || 0);
+    }, [ratingSelector]);
+
     return (
         <div className="star-container">
             {[...Array(5)].map((x, i) => {
@@ -16,7 +27,9 @@ function StarRating(props) {
                             name="rating"
                             id=""
                             value={ratingValue}
-                            onClick={() => setRating(ratingValue)}
+                            onClick={() => {
+                                dispatch(updateRating(ratingValue, id));
+                            }}
                         />
                         <FaStar
                             className="star-container__label__star"
