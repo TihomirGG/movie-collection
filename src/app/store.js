@@ -1,6 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import reducers from './slices/index';
+
 export const store = configureStore({
-  reducer: {
-  },
+  reducer: reducers
 });
+
+export default store;

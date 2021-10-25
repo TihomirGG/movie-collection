@@ -1,5 +1,5 @@
 export default {
- SEARCH: '/search',
- MOVIE: '/movies/:title',
+ SEARCH: '/search/:keyword',
+ MOVIE: '/movies/:id',
  HOME: '/'
 };

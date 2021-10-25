@@ -13,5 +13,30 @@
         left: 50%;
         right: 50%;
         transform: translate(-50%, 50%);
+        margin-bottom: 20px;
     }
+
+    &__empty {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.relative-div {
+    position: relative;
+}
+
+.link-div {
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+    color: #000;
+    position: absolute;
+    min-height: 50%;
+    min-width: 80%;
+    margin: 0 auto;
+    top: 60px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }

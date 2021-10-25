@@ -12,4 +12,10 @@
         height: 100%;
         object-fit: cover;
     }
+
+    &__empty {
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
 }
